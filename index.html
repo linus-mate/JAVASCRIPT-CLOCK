@@ -1,11 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS-clock</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <main>
+        <div id="first-page">
+            <div class="wrapper">
+                <h2>NAIROBI, KENYA TIME</h2>
+                <div id="clock">
+                    <svg class="clock-graphic" width="350" height="300" viewBox="-150 -150 300 300" >
+                        <circle class="clock-seconds" cx="0" cy="0" r="145"
+                        stroke="yellow" stroke-width="6" fill="black" pathlength="60" stroke-dasharray= ".1 .9" stroke-dashoffset=".05" />
+
+                        <circle class="clock-minutes" cx="0" cy="0" r="145"
+                        stroke="yellow" stroke-width="9" fill="black" pathlength="12" stroke-dasharray= ".1 .9" stroke-dashoffset=".05" />
+
+                        <circle class="clock-center" cx="0" cy="0" r="3"
+                        stroke="white" stroke-width="3" fill="red" />
+
+                     <text x="50" y="-30" id="month"></text>
+
+                        <text x="50" y="-5" id="date">10</text>
+
+                        <text x="50" y="10" id="am-pm">pm</text>
+
+
+                        <line class="clock-hand minute-hand" x1="0" y1="2" x2="0" y2="-110" />
+
+                        <line class="clock-hand hour-hand" x1="0" y1="2" x2="0" y2="-60" />
+
+                        <line class="clock-hand second-hand" x1="0" y1="12" x2="0" y2="-120" />
+
+
+                    </svg>
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </main>
     <script src="script.js"></script>
 
   </body>
