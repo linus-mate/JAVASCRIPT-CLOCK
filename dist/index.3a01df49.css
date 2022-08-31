@@ -1,0 +1,82 @@
+:root {
+  --coral-color: coral;
+  --lightseagreen-color: #20b2aa;
+  --beige-color: beige;
+  --gold-color: gold;
+  --lightgoldenyellow-color: #fafad2;
+  --primary-color: #6500ff;
+  --white-color: #fff;
+  --text-color: #484848;
+  --gray-color: #888;
+  --bkg-color: #232946;
+  --lightblue-color: #add8e6;
+  --black-color: #000;
+  --pink-color: #eebbc3;
+  --purple-color: #b8c1ec;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: spartan, sans-serif;
+}
+
+body {
+  background: var(--black-color);
+  min-height: 100vh;
+  place-items: center;
+  font-size: 15px;
+  display: grid;
+}
+
+#first-page {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 45px;
+  margin: 15px;
+  display: flex;
+}
+
+.wrapper {
+  color: var(--white-color);
+  place-items: center;
+  gap: 30px;
+  display: flex;
+}
+
+.clock-hand {
+  stroke: var(--lightseagreen-color);
+}
+
+.hour-hand {
+  stroke-width: 4px;
+  transform: rotate(90deg);
+}
+
+.minute-hand {
+  stroke-width: 4px;
+  transform: rotate(45deg);
+}
+
+#month {
+  fill: var(--coral-color);
+  font-size: 15px;
+}
+
+#date {
+  fill: var(--gold-color);
+  font-size: 30px;
+}
+
+#am-pm {
+  text-transform: uppercase;
+  fill: var(--lightgoldenyellow-color);
+  font-size: 10px;
+}
+
+#first-page h2 {
+  padding-bottom: 25px;
+}
+
+/*# sourceMappingURL=index.3a01df49.css.map */

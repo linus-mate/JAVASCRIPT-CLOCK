@@ -1,0 +1,28 @@
+{
+  "name": "js-clock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linus-mate/javascript-clock.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/linus-mate/javascript-clock/issues"
+  },
+  "homepage": "https://github.com/linus-mate/javascript-clock#readme",
+  "devDependencies": {
+    "parcel": "^2.7.0"
+  },
+  "dependencies": {
+    "date-fns-tz": "^1.3.6"
+  }
+}

@@ -40,7 +40,7 @@
         align-items: center;
         justify-items: center;
         gap: 30px;
-        display: grid;
+        display: flex;
         color: var(--white-color);
     }
 

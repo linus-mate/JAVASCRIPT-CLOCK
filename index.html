@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS-clock</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" type="module"></script>
   </head>
   <body>
     <main>
         <div id="first-page">
             <div class="wrapper">
-                <h2>NAIROBI, KENYA TIME</h2>
+                
                 <div id="clock">
                     <svg class="clock-graphic" width="350" height="300" viewBox="-150 -150 300 300" >
                         <circle class="clock-seconds" cx="0" cy="0" r="145"
@@ -41,13 +41,26 @@
                     </svg>
 
                 </div>
+
+                <div class="time-box">
+                  <h1></h1>
+                  <span id="world-time"></span>
+                </div> 
+                <form name="list">
+                  <select id="slt">
+
+                  </select>
+
+                </form>
+                
             </div>
 
         </div>
 
 
     </main>
-    <script src="script.js"></script>
+   
+
 
   </body>
 </html>
