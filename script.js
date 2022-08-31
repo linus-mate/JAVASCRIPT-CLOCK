@@ -86,8 +86,8 @@ function userSelection(location){
         return response.json();
       })
       .then(data =>{
-        ui.minutes = data.datetime.substr(11, 2)
-        ui.hours = data.datetime.substr(14, 2)
+        ui.minutes = data.datetime.substr(14, 2)
+        ui.hours = data.datetime.substr(11, 2)
         ui.seconds = data.datetime.substr(17, 2)
        
       })
