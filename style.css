@@ -36,12 +36,31 @@
         gap: 45px;
         margin: 15px;
     }
+    #clock{
+        
+    }
+    #clock h1{
+        text-align: center;
+        padding-bottom: 80px;
+        font-family: 'Allura',  cursive;
+        color: var(--gold-color);
+    }
+    #local-time h2{
+        text-align: center;
+        padding: 20px;
+    }
     .wrapper{
         align-items: center;
         justify-items: center;
-        gap: 30px;
+        gap: 130px;
         display: flex;
+        flex-wrap: wrap;
         color: var(--white-color);
+        float: left;
+        width: 100%;
+        padding: 10px;
+        height: 300px;
+       
     }
 
     .clock-hand{
@@ -70,5 +89,23 @@
     }
     #first-page h2{
         padding-bottom: 25px;
+        font-family: 'Allura',  cursive;
+        color: var(--gold-color);
     }
     
+    #slt{
+        padding: 20px;
+    }
+    #world-time{
+        margin-top: 50px;
+        color: var(--white-color);
+    }
+    .time-box h1{
+        padding-bottom: 170px;
+        font-family: 'Allura',  cursive;
+    }
+    #local{
+        
+        color: var(--gold-color);
+        margin-right: 50px;
+    }

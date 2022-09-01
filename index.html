@@ -10,11 +10,14 @@
     <script src="script.js" type="module"></script>
   </head>
   <body>
-    <main>
+
+
+    
         <div id="first-page">
             <div class="wrapper">
                 
                 <div id="clock">
+                  <h1>Local Time Analog Clock</h1>
                     <svg class="clock-graphic" width="350" height="300" viewBox="-150 -150 300 300" >
                         <circle class="clock-seconds" cx="0" cy="0" r="145"
                         stroke="yellow" stroke-width="6" fill="black" pathlength="60" stroke-dasharray= ".1 .9" stroke-dashoffset=".05" />
@@ -27,7 +30,7 @@
 
                      <text x="50" y="-30" id="month"></text>
 
-                        <text x="50" y="-5" id="date">10</text>
+                        <text x="50" y="-5" id="date">10</text>margin-right: 00px;
 
                         <text x="50" y="10" id="am-pm">pm</text>
 
@@ -37,29 +40,33 @@
                         <line class="clock-hand hour-hand" x1="0" y1="2" x2="0" y2="-60" />
 
                         <line class="clock-hand second-hand" x1="0" y1="12" x2="0" y2="-120" />
-
-
                     </svg>
+                    <div id="local-time">
+                      <h2>Nairobi, Kenya</h2>
+                      <h2 id="local"></h2>
+
+                    </div>
 
                 </div>
 
                 <div class="time-box">
-                  <h1></h1>
-                  <span id="world-time"></span>
+                  <h1>Get Time For Your Preferred Location</h1>
+
+                  <form name="list">
+                    <select id="slt">
+  
+                    </select>
+  
+                  </form>
+                  <h1 id="world-time"></h1>
+
+                 
                 </div> 
-                <form name="list">
-                  <select id="slt">
-
-                  </select>
-
-                </form>
+               
                 
             </div>
 
         </div>
-
-
-    </main>
    
 
 

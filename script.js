@@ -23,13 +23,8 @@ document.getElementById('slt').addEventListener('change', function() {
 
 
 function initializeClock(){
-    //console.log(dateTime);
 
     const now = new Date();
-
-   // const currentMonth = now.getMonth();
-   // console.log(currentMonth); 
-   // month.textContent = currentMonth;
 
     const currentDate = now.getDate();
     const hours = (now.getHours() + now.getMinutes() / 60) / 12 * 360;
@@ -46,7 +41,9 @@ function initializeClock(){
     amPm.textContent = now.getHours() > 12 ? 'PM' : 'AM';
     date.textContent = currentDate;
 
-    document.getElementById('world-time').innerHTML = `${ui.hours}:${ui.minutes}:${ui.seconds}`;
+    document.getElementById('local').innerHTML = new Date().toLocaleString("en-US",{timeZone:'Africa/Nairobi',timeStyle:'medium',hourCycle:'h24'});
+
+    document.getElementById('world-time').innerHTML = `${ui.hours}:${ui.minutes}`;
 
 
 
