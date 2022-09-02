@@ -37,6 +37,9 @@
         margin: 15px;
     }
     #clock{
+        border: var(--gold-color) 5px solid;
+        padding: 20px;
+       
         
     }
     #clock h1{
@@ -99,6 +102,9 @@
     #world-time{
         margin-top: 50px;
         color: var(--white-color);
+    }
+    .time-box{
+        
     }
     .time-box h1{
         padding-bottom: 170px;

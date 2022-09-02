@@ -1,5 +1,4 @@
-
-
+document.addEventListener("DOMContentLoaded", function() {
 const secondHand = document.querySelector('.second-hand');
 const minuteHand = document.querySelector('.minute-hand');
 const hourHand = document.querySelector('.hour-hand');
@@ -7,6 +6,7 @@ const month = document.getElementById('month')
 const date = document.getElementById('date');
 const amPm = document.getElementById('am-pm');
 const selection = document.getElementById('slt');
+
 document.getElementById('slt').addEventListener('change', function() {
 
     userSelection(this.value);
@@ -104,5 +104,8 @@ initialize();
 //animationFrame more effective than timeOut
 
 requestAnimationFrame(initializeClock)
+
+
+});
 
 
