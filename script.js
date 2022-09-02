@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", function() {
 const secondHand = document.querySelector('.second-hand');
 const minuteHand = document.querySelector('.minute-hand');
 const hourHand = document.querySelector('.hour-hand');
-const month = document.getElementById('month')
 const date = document.getElementById('date');
 const amPm = document.getElementById('am-pm');
 const selection = document.getElementById('slt');
@@ -24,7 +23,11 @@ document.getElementById('slt').addEventListener('change', function() {
 
 function initializeClock(){
 
+  const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
     const now = new Date();
+   
+    
 
     const currentDate = now.getDate();
     const hours = (now.getHours() + now.getMinutes() / 60) / 12 * 360;
@@ -40,6 +43,11 @@ function initializeClock(){
 
     amPm.textContent = now.getHours() > 12 ? 'PM' : 'AM';
     date.textContent = currentDate;
+    let monthNames = months[now.getMonth()];
+     document.getElementById("month").innerHTML = monthNames;
+
+  
+    
 
     document.getElementById('local').innerHTML = new Date().toLocaleString("en-US",{timeZone:'Africa/Nairobi',timeStyle:'medium',hourCycle:'h24'});
 
